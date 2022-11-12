@@ -11,3 +11,4 @@ pipeline {
       sh "./test_hello.sh"
    }
  }
+}
