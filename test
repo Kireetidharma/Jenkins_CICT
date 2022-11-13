@@ -6,7 +6,7 @@ pipeline {
             steps 
             {
                 sh '''#!/bin/bash
-                echo shell commands here
+                echo Hello World!
                 '''
             }
         }
