@@ -1,18 +1,14 @@
-node {
-  try {
-    stage('checkout') {
-      checkout scm
+pipeline {
+    agent any
+    stages {
+        stage('Build')
+        {
+            steps 
+            {
+                sh '''#!/bin/bash
+                echo shell commands here
+                '''
+            }
+        }
+        }
     }
-    stage('execute'){
-    sh "chmod -x hello.sh"
-    }
-    stage('test') {
-      bash hello.sh
-    }
-  }
-  finally {
-    stage('cleanup') {
-      echo "doing some cleanup..."
-    }
-  }
-}
