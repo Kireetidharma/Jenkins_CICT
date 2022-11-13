@@ -10,7 +10,7 @@ pipeline {
     }
     stage('test') {
       steps{
-      sh "./test_hello.sh"
+      bat "./test_hello.sh"
    }
   }
  }
