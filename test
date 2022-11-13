@@ -4,8 +4,7 @@ node {
       checkout scm
     }
     stage('test') {
-      sh "#!/bin/bash
-      echo shell commands here"
+      sh "#!/bin/bash echo shell commands here"
     }
   }
   finally {
