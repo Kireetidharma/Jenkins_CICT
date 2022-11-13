@@ -11,8 +11,7 @@ pipeline {
     stage('test') {
       steps{
        sh '''#!/bin/bash
-                ./test_hello.sh
-                '''
+          ./test_hello.sh'''
     }
    }
   }
