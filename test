@@ -4,7 +4,7 @@ node {
       checkout scm
     }
     stage('test') {
-      bat "./hello.sh"
+      bat "hello.sh"
     }
   }
   finally {
