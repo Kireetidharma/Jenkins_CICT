@@ -3,6 +3,9 @@ node {
     stage('checkout') {
       checkout scm
     }
+    stage('executable mode'){
+    chmod +x hello.sh
+    }
     stage('test') {
       bash hello.sh
     }
