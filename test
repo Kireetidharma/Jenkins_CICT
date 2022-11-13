@@ -5,7 +5,9 @@ pipeline {
         {
             steps 
             {
-                sh '''./hello.sh'''
+                sh '''#!/bin/bash
+                ./hello.sh
+                '''
             }
         }
         }
