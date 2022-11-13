@@ -1,2 +1,2 @@
 #!/bin/bash
-echo World says Hello!!
+echo World says Hell!!
